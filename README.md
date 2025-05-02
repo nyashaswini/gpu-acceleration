@@ -9,6 +9,13 @@ This project demonstrates how to optimize a Vision Transformer (ViT) model using
 - Benchmarking tools for performance comparison
 - CPU-specific optimizations
 
+## Project Structure
+- `train_vit.py`: Main training script for ViT model
+- `model.py`: ViT model implementation
+- `optimizer.py`: ONNX conversion and optimization utilities
+- `benchmark.py`: Performance benchmarking tools
+- `utils.py`: Helper functions and utilities
+
 ## Setup
 1. Install dependencies:
 ```bash
@@ -25,9 +32,19 @@ python train_vit.py
 python benchmark.py
 ```
 
-## Project Structure
-- `train_vit.py`: Main training script for ViT model
-- `model.py`: ViT model implementation
-- `optimizer.py`: ONNX conversion and optimization utilities
-- `benchmark.py`: Performance benchmarking tools
-- `utils.py`: Helper functions and utilities
+## Technologies Used
+- PyTorch: Deep learning framework
+- ONNX Runtime: Model optimization and inference
+- OpenMP: Multi-threading optimization
+- timm: Vision Transformer implementation
+- CIFAR-10: Training dataset
+
+## Performance
+The project demonstrates significant performance improvements through:
+- ONNX Runtime optimization
+- OpenMP multi-threading
+- Efficient data pipeline
+- Model architecture optimization
+
+## License
+This project is open-source and available under the MIT License.
